@@ -38,30 +38,22 @@ if(car.model>=2015){
    TotalPrice+=10;
 }
 
-if(car.model>=2010 && cars[0].model<=2014){
-   TotalPrice +=8;
+
+else if(car.model>=2010 && cars[0].model<=2014){
+  TotalPrice+=8;
 
 }
-
-
-
-if(car.model>=2005 && cars[0].model<=2009){
+else if(car.model>=2005 && cars[0].model<=2009){
   TotalPrice+=6;
 
 }
 
-if(car.model>=2010 && cars[0].model<=2014){
+else if(car.model>=2000 && cars[0].model<=2004){
   TotalPrice+=8;
 
 }
 
-
-if(car.model>=2000 && cars[0].model<=2004){
-  TotalPrice+=8;
-
-}
-
-if(car.model>=1999){
+else if(car.model<=1999){
   TotalPrice+=2;
 
 }
@@ -79,17 +71,14 @@ if(car.features["electric windows"]==="y"){
   TotalPrice+=8;
 
 }
+
+if(car.features["electric mirros"]==="y"){
+  TotalPrice+=6;
+
+}
 if(car.features.sunroof==="y"){
   TotalPrice+=7;
 
-}
-if(car.features["electric mirros"]==="manual"){
-  TotalPrice+=3;
-
-}
-
-if(car.features.sunroof==="y"){
-  TotalPrice+=7;
 }
 if(car.features["auto park"]==="y"){
   TotalPrice+=5;}
